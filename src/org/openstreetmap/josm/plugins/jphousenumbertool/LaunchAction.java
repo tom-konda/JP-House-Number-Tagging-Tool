@@ -1,4 +1,4 @@
-package org.openstreetmap.josm.plugins.jphousenumbertaggingtool;
+package org.openstreetmap.josm.plugins.jphousenumbertool;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.util.Collection;
@@ -16,10 +16,10 @@ public class LaunchAction extends JosmAction implements SelectionChangedListener
     private String pluginDir;
    
     public LaunchAction(String pluginDir) {
-        super("HouseNumberTaggingTool", 
+        super("Launch JPHouseNumberTaggingTool", 
               "home-icon32", 
-              "Launches the HouseNumberTaggingTool dialog", 
-              Shortcut.registerShortcut("edit:housenumbertaggingtool", "HouseNumberTaggingTool", KeyEvent.VK_K, Shortcut.DIRECT),
+              "Launches the JPHouseNumberTaggingTool dialog", 
+              Shortcut.registerShortcut("edit:jphousenumbertaggingtool", "JPHouseNumberTaggingTool", KeyEvent.VK_B, Shortcut.DIRECT),
               true);
 
         this.pluginDir = pluginDir;
