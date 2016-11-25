@@ -1,4 +1,5 @@
 package org.openstreetmap.josm.plugins.jphousenumbertool;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.util.Collection;
@@ -14,10 +15,10 @@ public class LaunchAction extends JosmAction implements SelectionChangedListener
     private OsmPrimitive selection = null;
 
     private String pluginDir;
-   
+
     public LaunchAction(String pluginDir) {
         super("Launch JPHouseNumberTaggingTool", 
-              "home-icon32", 
+              null, 
               "Launches the JPHouseNumberTaggingTool dialog", 
               Shortcut.registerShortcut("edit:jphousenumbertaggingtool", "JPHouseNumberTaggingTool", KeyEvent.VK_B, Shortcut.DIRECT),
               true);
@@ -34,7 +35,7 @@ public class LaunchAction extends JosmAction implements SelectionChangedListener
         if (!isEnabled()) {
             return;
         }
-      
+
         TagDialog dialog = new TagDialog(pluginDir, selection);
         dialog.showDialog();
     }
@@ -48,7 +49,7 @@ public class LaunchAction extends JosmAction implements SelectionChangedListener
     public void selectionChanged(Collection<? extends OsmPrimitive> newSelection) {
         if (newSelection != null && newSelection.size() == 1) {
             setEnabled(true);
-            selection  =  newSelection.iterator().next();
+            selection = newSelection.iterator().next();
         } else {
             setEnabled(false);
             selection = null;
