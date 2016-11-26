@@ -18,7 +18,7 @@ public class LaunchAction extends JosmAction implements SelectionChangedListener
 
     public LaunchAction(String pluginDir) {
         super("Launch JPHouseNumberTaggingTool", 
-              null, 
+              "jp-address", 
               "Launches the JPHouseNumberTaggingTool dialog", 
               Shortcut.registerShortcut("edit:jphousenumbertaggingtool", "JPHouseNumberTaggingTool", KeyEvent.VK_B, Shortcut.DIRECT),
               true);
