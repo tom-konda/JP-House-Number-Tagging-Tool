@@ -25,7 +25,7 @@
     <property name="plugin.class" value="org.openstreetmap.josm.plugins.jphousenumbertool.JPHouseNumberTaggingToolPlugin"/>
     <property name="plugin.description" value="Forked HouseNumberTaggingTool plugin, suited for Japanese addressing system."/>
     <property name="plugin.icon" value="images/jp-address.png"/>
-    <property name="plugin.link" value=""/>
+    <property name="plugin.link" value="https://github.com/tom-konda/JP-House-Number-Tagging-Tool"/>
     <!--<property name="plugin.early" value="..."/>-->
     <!--<property name="plugin.requires" value="..."/>-->
     <!--<property name="plugin.stage" value="..."/>-->
