@@ -24,7 +24,7 @@
     <property name="plugin.author" value="Tom Konda"/>
     <property name="plugin.class" value="org.openstreetmap.josm.plugins.jphousenumbertool.JPHouseNumberTaggingToolPlugin"/>
     <property name="plugin.description" value="Forked HouseNumberTaggingTool plugin, suited for Japanese addressing system."/>
-    <property name="plugin.icon" value=""/>
+    <property name="plugin.icon" value="images/jp-address.png"/>
     <property name="plugin.link" value=""/>
     <!--<property name="plugin.early" value="..."/>-->
     <!--<property name="plugin.requires" value="..."/>-->
